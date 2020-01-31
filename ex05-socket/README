@@ -1,0 +1,39 @@
+You have 4 folders with each exercise completed with their respective Makefile.
+- For ex04-url
+Testing with the below we have different outputs:  
+
+[Input] ./test_url bla:google.com/ 
+[Output] INVALID
+
+[Input] ./test_url https://google.com/
+[Output] Use http
+
+[Input] ./test_url http
+[Output] Use http
+
+[Input] ./test_url httpbin.org:ry/
+[Output] INVALID
+
+[Input] ./test_url httpbin.org/
+[Output]
+	VALID
+	The URL contains following information: 
+	Protocol type:	http
+	Host name:	httpbin.org
+	Port No.:	80
+	Path:		/
+
+- For ex05-url
+Test with:
+[Input] ./test_url httpbin.org
+[Output]
+	Downloading httpbin.org 
+
+	VALID
+	The URL contains following information: 
+	Protocol type:	http
+	Host name:	httpbin.org
+	Port No.:	80
+	Path:		/
+	the file is saved in received_page.
+(The file "received_page" is given).

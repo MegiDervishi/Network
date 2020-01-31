@@ -1,0 +1,69 @@
+## TIC TAC TOE GAME
+
+The folder contains client.c, common.h/.c and server.c
+I have tested using the server_macos for the client and the functions work.
+When testing with my server I obtain the output below. 
+
+1. The tic tac toe detects the winner/loser.
+2. The tic tac toe detects if there is an invalid range of input of row and col.
+3. The tic tac toe detects if there is already a filled position.
+
+
+[OUTPUT from local machine client 2]
+Greeting msg sent
+
+You have a msg
+Welcome Player 2. You play with X
+
+You have a msg
+------ Both players have arrived.-----
+
+You have an FYI msg
+You have 1 filled position(s)
+
+  O |    |    
+----+----+----
+    |    |    
+----+----+----
+    |    |    
+Make your move!
+ <row> <col>
+[In] 1 1
+
+You have an FYI msg
+You have 3 filled position(s)
+  O |    |    
+----+----+----
+    |  X |    
+----+----+----
+    |    |  O 
+Make your move!
+ <row> <col>
+[In] 2 2
+
+You have a msg
+--Place been taken---
+Make your move!
+ <row> <col>
+[In] 6 6
+
+You have a msg
+------Invalid move try again!---
+Make your move!
+ <row> <col>
+[In] 2 0
+
+You have an FYI msg
+You have 5 filled position(s)
+  O |    |    
+----+----+----
+    |  X |    
+----+----+----
+  X |  O |  O 
+Make your move!
+ <row> <col>
+[In] 0 2
+
+Game finished
+---Winner Congrats!---
+Game over
