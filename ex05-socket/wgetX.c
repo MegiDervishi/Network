@@ -67,7 +67,7 @@ char* download_page(url_info info, char *recv_buf_t)
 	hints.ai_family = AF_UNSPEC; // use AF_INET6 to force IPv6
 	hints.ai_socktype = SOCK_STREAM;
 
-	char string_port[6] = { 0 }; //ill change this dont worry LOAN its just to see if it works okay!! im not a cheater
+	char string_port[6] = { 0 };
 	sprintf(string_port, "%d", info.port);
 
 	if ( (rv = getaddrinfo(info.host , string_port, &hints , &results)) != 0){ //error msg
